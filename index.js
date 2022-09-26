@@ -60,12 +60,15 @@ Portfolio.component('icon-link',{
     methods:{
         giveSVG(){
             svg_name = this.title
-            console.log(this.svg)            
-            return this.svg.svg_name
+            console.log(this.svg)
+            console.log(svg_name)
+            console.log(this.svg.svg_name)
+            console.log(this.svg[svg_name])            
+            return this.svg[svg_name]
         },
         giveLink(){
             link_name = this.title
-            return this.link.link_name
+            return this.link[link_name]
         }
     },
     props:['title'],

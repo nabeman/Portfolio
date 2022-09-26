@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width scale=1.0">
+    </head>
+    <body>
+        <div id="portfolio">
+            <button
+                v-for="tab in tabs"
+                :key="tab"
+                @click="currentTab = tab"
+                >
+                {{ tab }}
+            </button>
+            <component :is="currentTabComponent"></component>
+        </div>
+        <!-- js読み込み -->
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

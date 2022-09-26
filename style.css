@@ -35,3 +35,10 @@ body{
     border-right: none;
     border-bottom: none;
 }
+
+.my-icon{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 20vw;
+    height: 20vw;
+}

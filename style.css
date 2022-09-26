@@ -42,3 +42,11 @@ body{
     width: 20vw;
     height: 20vw;
 }
+
+a:hover,a:visited{
+    color: inherit;
+}
+
+a.twitter{
+    color:#1DA1F2
+}

@@ -1,0 +1,37 @@
+body{
+    margin:0
+}
+
+.tab-button{
+    background:white;
+    border-width: 0.05em;
+    border-left: none;
+    border-bottom: none;
+    border-top:none;
+    font-size: 2em;
+    width: 6em;
+    padding: 1vw 2.5vw 1vw 2.5vw;
+    position: relative;
+    
+}
+
+.active::after{
+    content: "";
+    background: rgb(255, 255, 255);
+    width: 6em;
+    height: 1px;
+    position: absolute;
+    display: inline-block;
+    bottom: -1px;
+    left: 0;
+
+    
+}
+
+.tab-comp{
+    border:solid;
+    border-width: 0.05em;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}

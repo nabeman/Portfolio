@@ -3,6 +3,7 @@
     <head>
         <title>Portfolio</title>
         <meta name="viewport" content="width=device-width scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="portfolio">
@@ -10,10 +11,11 @@
                 v-for="tab in tabs"
                 :key="tab"
                 @click="currentTab = tab"
+                :class="['tab-button', {active: currentTab === tab}]"
                 >
                 {{ tab }}
             </button>
-            <component :is="currentTabComponent"></component>
+            <component :is="currentTabComponent" class="tab-comp"></component>
         </div>
         <!-- js読み込み -->
         <script src="https://unpkg.com/vue@next"></script>

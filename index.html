@@ -15,7 +15,9 @@
                 >
                 {{ tab }}
             </button>
-            <component :is="currentTabComponent" class="tab-comp"></component>
+        <div class="main_content tab-comp">
+            <component :is="currentTabComponent"></component>
+        </div>
         </div>
         <!-- js読み込み -->
         <script src="https://unpkg.com/vue@next"></script>

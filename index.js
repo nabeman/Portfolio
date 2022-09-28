@@ -16,8 +16,12 @@ Portfolio.component('my-profile',{
     template:`
     <div class="profile">
         <my-icon></my-icon>
-        <icon-link title="github"></icon-link>
-        <icon-link title="twitter"></icon-link>
+        <div class="icon-links">
+            <icon-link title="github"></icon-link>
+            <icon-link title="twitter"></icon-link>
+        </div>
+    </div>
+    <div class="my-pages">
     </div>
     `
 })
@@ -36,7 +40,9 @@ Portfolio.component('my-other',{
 
 Portfolio.component('my-icon',{
     template:`
-    <div><img src="image/my-icon.png" class="my-icon"></div>
+    <div class="my-icon-div">
+        <img src="image/my-icon.png" class="my-icon">
+    </div>
     `
 })
 
@@ -59,11 +65,7 @@ Portfolio.component('icon-link',{
     },
     methods:{
         giveSVG(){
-            svg_name = this.title
-            console.log(this.svg)
-            console.log(svg_name)
-            console.log(this.svg.svg_name)
-            console.log(this.svg[svg_name])            
+            svg_name = this.title            
             return this.svg[svg_name]
         },
         giveLink(){

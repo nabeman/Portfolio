@@ -37,10 +37,15 @@ body{
 }
 
 .my-icon{
+    display: inline-block;
     border-radius: 50%;
     object-fit: cover;
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
+}
+
+.my-icon-div{
+    text-align: center;
 }
 
 a:hover,a:visited{
@@ -48,5 +53,47 @@ a:hover,a:visited{
 }
 
 a.twitter{
-    color:#1DA1F2
+    display:inline-block;
+    color:#1DA1F2;
+    margin-left: 5%;
+
+}
+
+a.github{
+    display:inline-block;
+    margin-right: 5%;
+}
+
+.bi-twitter{
+    width:3.5vw;
+    height:3.5vw;
+}
+
+.bi-github{
+    width:3.5vw;
+    height:3.5vw;
+}
+
+
+
+.profile{
+    display:inline-block;
+    width: 30%;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-pages{
+    display:inline-block;
+    width: 60%;
+}
+
+.main_content{
+    display:flex;
+}
+
+.icon-links{
+    margin-top: 7%;
+    text-align: center;
 }

@@ -21,11 +21,13 @@ Portfolio.component('my-profile',{
             <icon-link title="twitter"></icon-link>
         </div>
         <div class="my-introduce">
-            <div class="myname"><div>
+            <div class="myname">
+                nabeman
+            </div>
         </div>
     </div>
     <div class="my-pages">
-    aaaaaaa
+    
     </div>
     `
 })
